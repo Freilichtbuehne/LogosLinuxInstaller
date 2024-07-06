@@ -862,7 +862,7 @@ def get_logos_releases(app=None):
         # if len(releases) == 5:
         #    break
 
-    filtered_releases = filter_versions(releases, 30, 1)
+    filtered_releases = filter_versions(releases, 35, 1)
     logging.debug(f"Available releases: {', '.join(releases)}")
     logging.debug(f"Filtered releases: {', '.join(filtered_releases)}")
 
