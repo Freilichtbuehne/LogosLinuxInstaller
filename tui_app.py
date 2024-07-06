@@ -44,7 +44,8 @@ def control_panel_app():
         options_main = [
             "Install Dependencies",
             "Download or Update Winetricks",
-            "Run Winetricks"
+            "Run Winetricks",
+            "Install ICU"
         ]
         options_installed = [
             f"Run {config.FLPRODUCT}",
@@ -128,6 +129,8 @@ def control_panel_app():
             control.set_winetricks()
         elif choice == "Run Winetricks":
             wine.run_winetricks()
+        elif choice == "Install ICU":
+            wine.installICUDataFiles()
         elif choice.endswith("Logging"):
             wine.switch_logging()
         else:
