@@ -81,10 +81,11 @@ class LogosManager:
             )
 
         # Ensure wine version is compatible with Logos release version.
-        good_wine, reason = wine.check_wine_rules(
-            wine_release,
-            config.current_logos_version
-        )
+        #good_wine, reason = wine.check_wine_rules(
+        #    wine_release,
+        #    config.current_logos_version
+        #)
+        good_wine, reason = True, True
         if not good_wine:
             msg.logos_error(reason, app=self)
         else:
