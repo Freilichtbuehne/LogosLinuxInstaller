@@ -775,11 +775,11 @@ def find_wine_binary_files(release_version):
             release_version,
             binary,
         )
-        if output1 is not None and output1:
-            continue
-        else:
-            binaries.remove(binary)
-            logging.info(f"Removing binary: {binary} because: {output2}")
+        #if output1 is not None and output1:
+        #    continue
+        #else:
+        #    binaries.remove(binary)
+        #    logging.info(f"Removing binary: {binary} because: {output2}")
 
     return binaries
 
